@@ -14,7 +14,8 @@ When a Decision Tree predicts numeric values it is called Regression Tree.
 
 **How do you calculate Gini Impurity of a categorical feature?**
 * Gini Impurity for the left leaf node derived from classification in decision tree: 
-$$ G_{Left} = 1 - (p(Yes))^2 - (p(No))^2 = 1 - \left(\frac{N_{Yes|Left}}{N_{Yes|Left} + N_{No|Left}}\right)^2 - \left(\frac{N_{No|Left}}{N_{Yes|Left} + N_{No|Left}}\right)^2$$ 
+$$ G_{Left} = 1 - (p(Yes))^2 - (p(No))^2 $$
+$$G_{Left} = 1 - \left(\frac{N_{Yes|Left}}{N_{Yes|Left} + N_{No|Left}}\right)^2 - \left(\frac{N_{No|Left}}{N_{Yes|Left} + N_{No|Left}}\right)^2$$ 
 * Similarly, Gini Impurity for the right leaf node derived from classification in decision tree:
 $$ G_{Right} = 1 - (p(Yes))^2 - (p(No))^2 = 1 - \left(\frac{N_{Yes|Right}}{N_{Yes|Right} + N_{No|Right}}\right)^2 - \left(\frac{N_{No|Right}}{N_{Yes|Right} + N_{No|Right}}\right)^2$$  
 * But the number of data points on the left leaf node $(N_{Yes|Left} + N_{No|Left})$ is not equal to the data points on the right leaf node $N_{Yes|Right} + N_{No|Right}$. That means, the Gini Impurity calculated for the two nodes do not carry same weight. 
