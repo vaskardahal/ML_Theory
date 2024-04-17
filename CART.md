@@ -13,8 +13,10 @@ When a Decision Tree predicts numeric values it is called Regression Tree.
 * There are various methods to quantify the impurity. The most popular one is Gini Impurity. Other ones are Entropy and Information Gain.
 
 **How do you calculate Gini Impurity of a categorical feature?**
-* Gini Impurity for the left leaf node derived from classification in decision tree: 
-$$ G_{Left} = 1 - p_{Yes}^2 - p_{No}^2 $$
+* Gini Impurity for the left leaf node derived from classification in decision tree: \
+```math
+G_{Left} = 1 - p_{Yes}^2 - p_{No}^2
+```
 $$G_{Left} = 1 - \left(\frac{N_{Yes|Left}}{N_{Yes|Left} + N_{No|Left}}\right)^2 - \left(\frac{N_{No|Left}}{N_{Yes|Left} + N_{No|Left}}\right)^2$$ 
 * Similarly, Gini Impurity for the right leaf node derived from classification in decision tree:
 $$ G_{Right} = 1 - (p(Yes))^2 - (p(No))^2 $$
