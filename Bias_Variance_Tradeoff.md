@@ -8,3 +8,9 @@ How can systematic errors be introduced by a model? Let's consider some examples
 2. Sales of an item in a store is needed to be predicted. But the training data is collected during a month when the item was on discount. Discounted price potentially means the item's sale will soar up during that period. So, if the model is trained with only the data collected during this discounted period, the model will consistently over-estimate the sales of the item. This consistent over-perdiction leads to bias in the model. 
 
 ## Variance
+Variance refers to the variability in a trained model's prediction on a different dataset from the one which it was trained on. The variability is inevitably introduced by the sensitivity of the model to the training set. Two scenarios are possible: 
+* High Variance: The model has captured the unique characterstics and noises of the training dataset more accurately, but has failed to capture the generalizable underlying trend and characterstics of the population. This phenomenon is called as overfitting. 
+* Low Variance: The model is less sensitive to the specifics of the training datasets. It has learned the underlying patterns of the population and it is able to perform consistent predictions across different datasets. 
+
+## What is Bias-Variance tradeoff? 
+In general - and please note that in general - when the model fits the training data too well (low Bias), but performs a poor prediction on different dataset (high Variance), it is probably because the model has overfitted to the training dataset and therefore is not generalizable. On the other hand, if we allow some bias (reduced performance) on the training dataset, it will become less sensitive to the features very specific to that training set, and that allows its ability to identify the genreal trends of the dataset to become more prominent. 
